@@ -57,6 +57,6 @@ console.log(typeof str_value2)//string
 console.log(str_value2)//undefined
 
 
-//Final over view:
+
 
 
