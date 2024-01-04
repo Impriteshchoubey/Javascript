@@ -39,11 +39,22 @@ console.log(typeof f);//Number
 
 //another Increment decrement operations
 //Infix postfix expressions 
+
+
+//Postfix
+/*If used postfix, with operator after operand (for example, p++), the increment operator increments and returns the value before incrementing.*/
 let p=4
 let q=p++
 console.log(`p:${p} and q=${q} `)
 //p=5 & q=4
 
+
+
+
+
+//Prefix:
+/*If used prefix, with operator before operand (for example, ++z), the increment operator increments and returns the value after incrementing.
+*/
 let z=4
 console.log(z);//Z=4
 let y=++z
