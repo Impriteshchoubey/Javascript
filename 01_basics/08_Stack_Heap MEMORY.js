@@ -13,7 +13,7 @@ console.table([User_salary,new_salary])
 
 
 /*in HEAP memory,when you changing a value to Non-primitive type like objects,a reference to the original variable is given for changing in values.
-this changes the orginal variable as well as current variable     */
+this changes the value of orginal variable as well as current variable     */
 
 let Employee1={Email:"Pritesh@google.com",
 salary:27500}
