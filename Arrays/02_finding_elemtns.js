@@ -38,3 +38,8 @@ const emp2=employee.findIndex(function(emp2){return emp2.age==22 })
 
 console.log(emp2);//2 index
 
+//finding using arrow function
+console.log(employee.find((employee)=>employee.name==="saorav"));
+//{ name: 'saorav', age: 23 }
+
+//if not found =>undefined
