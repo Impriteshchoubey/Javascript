@@ -37,9 +37,9 @@ const emp2={
     name2:"Purohit",
     salary2:27501
 }
-
+/******************ASSIGN(TARGET,SOURCE)********** */
 //using assign method assign(target,source)
-// const company=Object.assign(emp1,emp2)
+//  const company=Object.assign(emp1,emp2)
 
 
 
@@ -65,11 +65,51 @@ const emp2={
 //improved method for assigning and returning a new object is using a {} as target element this will copy the objects values only in the assigned variable(company)
 
 const company=Object.assign({},emp1,emp2)
-console.log(company)
+// console.log(company)
 //=>{ name1: 'Rohit', salary1: 27500, name2: 'Purohit', salary2: 27501 }
 
 
-console.log(emp1);
+//console.log(emp1);
 //=>{ name1: 'Rohit', salary1: 27500 }
 
 
+
+/**************directly Joining********* */
+
+const obj3={emp1,emp2}
+//console.log(obj3);
+
+
+/***********Using spread Operator************* */
+//mostly  used for joining
+const obj4={...emp1,...emp2}
+console.log(obj4);
+
+
+
+
+//some other Interesting methods
+//printing keys or values is in form of array
+// console.log(Object.keys(obj4));
+// console.log(Object.values(obj4));
+
+
+// console.log(Object.entries(obj4));
+//arrays inside array containing key values
+
+
+
+//to check whther an object has it property in output of true or false
+
+console.log(emp1.hasOwnProperty("name1"));//true
+console.log(emp1.hasOwnProperty("age"));//false
+
+
+
+
+
+//In databases ,the object are holded inside arrays
+let database=[{emp1},{emp2},6]
+console.log(database);
+
+console.log(database[0]);
