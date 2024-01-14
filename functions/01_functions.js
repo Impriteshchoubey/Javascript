@@ -22,7 +22,7 @@ function minusTwoNumbers(num1,num2){
 //calling a function
 minusTwoNumbers(5,6)//=>-1
 minusTwoNumbers()//=>Nan
-//if we dont pass arguments to function,it will give output Nan(Not A Number)
+//if we dont pass arguments to function,it will give output Nan(Not A Number) in case of console log
 
 
 
