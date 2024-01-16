@@ -3,6 +3,7 @@
 //syntax:- (function expression)(calling argurments)
 
 
+
 //Named IIFE(divide)
 (function divide(num1,num2){
     console.log(num1/num2)
