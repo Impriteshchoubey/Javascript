@@ -58,3 +58,31 @@ Steps:
                   
 
  */
+
+/****************************CALLSTACK************************
+ * based on LIFO CONCEPT:LAST IN FIRST OUT
+ * the task done at the last will be executed first
+ * 
+ * 
+ */
+function one(){                        
+    console.log("one")                   
+    two()       }                         
+function two(){
+    console.log("two")                  
+    three()
+}
+function three(){
+    console.log("three")
+}
+one()
+two()
+three()
+
+// output
+// one
+// two
+// three
+// two
+// three
+// three
