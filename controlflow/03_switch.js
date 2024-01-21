@@ -11,7 +11,7 @@
 //ex:simple calculator
 const a=10
 const b=5
-const sign= "/"
+const sign= "*"
 switch (sign) {
     case "+" : 
                 console.log(a+b);
