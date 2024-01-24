@@ -52,3 +52,12 @@ marvels.forEach((hero)=>console.log(hero.power))
 //web shooters
 // most technological weapons
 // man power and Shield
+
+
+/**++++++++++NOTE-REMINDER+++++++++++ */
+//as forEach function doesnot return any value it shows UNDEFINED however it will print the values if it is passed to a variable
+const arr=["hi","hello","how"]
+const sup=arr.forEach((item,index)=>console.log(item,index))
+//value is printed but
+//console.log(sup) //=>Undefined
+
