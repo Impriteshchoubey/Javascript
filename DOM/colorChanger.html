@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COLOR CHANGER</title>
+</head>
+<style>
+    body{background-color: #212121;
+    color: white;}
+    h1{text-align: center;}
+    .color{
+        height: 150px;
+        width: 150px;
+        border: 3px solid white;
+        cursor: pointer;
+    }
+    .color-box{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+    #red{background-color: rgb(255, 0, 0);}
+#blue{background-color: blue;}
+#green{background-color: green;}
+#yellow{background-color: yellow;}
+
+#clear{
+    height: 50px;
+    font-size: 40px;
+    border-radius: 10px;
+    font-weight: 550;
+    box-shadow: 2px 3px 3px  rgb(223, 74, 10);
+    
+}
+
+
+</style>
+<body>
+    <h1>COLOR CHANGER</h1>
+    <div class="color-box">
+        <div class="color" id="red"></div>
+        <div class="color" id="blue"></div>
+        <div class="color" id="green"></div>
+        <div class="color" id="yellow"></div>
+        <button class="color" id="clear">Clear</button>
+    </div>
+</body>
+<script>
+const body=document.querySelector('body')
+const color=document.querySelectorAll('.color')
+color.forEach(function(button){
+    button.addEventListener('click',function(change){
+       
+        switch (change.target.id) {
+    case "red": body.style.backgroundColor=change.target.id
+        
+        break;
+    case "blue": body.style.backgroundColor=change.target.id
+        
+        break;
+    case "green": body.style.backgroundColor=change.target.id
+        
+        break;
+    case "yellow": body.style.backgroundColor=change.target.id
+        
+        break;
+    default: body.style.backgroundColor="#212121"    
+    
+}
+        
+        
+    })
+})
+
+
+
+
+
+
+
+
+/*
+if(change.target.id==="red"){
+            body.style.backgroundColor=change.target.id
+        }
+        if(change.target.id==="blue"){
+            body.style.backgroundColor=change.target.id
+        }
+        if(change.target.id==="green"){
+            body.style.backgroundColor=change.target.id
+        }
+        if(change.target.id==="yellow"){
+            body.style.backgroundColor=change.target.id
+        }
+        if(change.target.id==="clear"){
+            body.style.backgroundColor="#212121"
+        }
+        */
+</script>
+</html>

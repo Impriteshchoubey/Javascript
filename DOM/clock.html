@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLOCK</title>
+</head>
+<style>
+    body{
+        background-color: #212121;
+        color: wheat;
+    
+    }
+
+.clock{
+    display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+    padding: 50px;
+ 
+
+  border: 3px  solid wheat;
+
+}
+
+#time{
+    
+    border-radius: 7px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    text-align: center;
+    padding:  10px;
+}
+</style>
+<body>
+    <div class="clock">
+        <h3>The Time Is:</h3>
+        <p id="time"></p>
+      
+    </div>
+    
+
+    
+</body>
+<script>
+    const clock=document.getElementById('time')
+    
+    setInterval(function(){
+        let date=new Date()
+        clock.innerHTML=date.toLocaleString()
+       
+    },1000)
+</script>
+</html>

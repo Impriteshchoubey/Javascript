@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>creating new element </title>
+</head>
+<body style="background-color: #212121;color:red;">
+    
+</body>
+<script>
+    function div(classes,write,bgcolor,textcolor) {
+        
+    const mydiv= document.createElement("div")
+    console.log(mydiv);
+    mydiv.className=classes
+    mydiv.id=Math.round(Math.random()*10+1); //random id
+
+    //providing custom attribute
+  //  mydiv.setAttribute('title','generated-title');
+    mydiv.style.backgroundColor=bgcolor;
+    mydiv.style.color=textcolor;
+    mydiv.style.padding="10px";
+   mydiv.innerText=write;
+
+//=>another method to insert text
+
+// const text="this is a div"
+// mydiv.append(text)
+
+//=>another method to insert text
+// const addtext=document.createTextNode("this is javascript");
+//     mydiv.appendChild(addtext)
+
+
+ //attaching the created div to webpage
+ document.body.append(mydiv);   
+    }
+
+div("div1","this is a div1","violet","black");    
+div("div2","this is a div2","indigo","white");    
+div("div3","this is a div3","blue","white");    
+div("div4","this is a div4","green","black");    
+div("div5","this is a div5","yellow","red");    
+div("div6","this is a div6","orange","blue");    
+div("div7","this is a div7","red","white");    
+
+</script>
+</html>
