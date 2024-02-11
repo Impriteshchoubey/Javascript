@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setTime inervals</title>
+</head>
+<style>
+    body{
+        background-color: #212121;
+        color: wheat;
+    }
+    button{width: 100px;
+    height: 30px;
+    background-color: crimson;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;}
+</style>
+<body>
+<h1>Hi, I am Pritesh Chaturvedi</h1>
+<button id="stop">Stop It</button>
+    
+</body>
+<script>
+//after 3 second text changes
+    const changeText=setTimeout(() => {
+        document.querySelector('h1').innerHTML='I am Learning Web Development'
+    }, 2000);
+
+  const stop=document.querySelector('#stop')
+ stop.addEventListener('click',function(){
+    //clear the time interval if user click on Stop It Button
+    clearTimeout(changeText)
+   
+
+ })
+</script>
+</html>
